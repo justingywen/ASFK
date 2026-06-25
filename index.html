@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduFlow | 探索無限學習可能</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-gray-50 font-sans">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-blue-600">EduFlow</a>
+                </div>
+
+                <!-- Search Bar -->
+                <div class="hidden md:flex flex-1 mx-8">
+                    <div class="relative w-full max-w-lg">
+                        <input type="text" placeholder="搜尋課程、老師、領域..." 
+                               class="w-full bg-gray-100 border-transparent focus:bg-white focus:ring-2 focus:ring-blue-500 rounded-full py-2 px-10 text-sm">
+                        <div class="absolute left-3 top-2.5 text-gray-400">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Actions -->
+                <div class="flex items-center space-x-6">
+                    <a href="#" class="text-gray-600 hover:text-blue-600">我要授課</a>
+                    <a href="#" class="text-gray-600 hover:text-gray-900 relative">
+                        <i class="fas fa-shopping-cart text-xl"></i>
+                        <span class="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full h-4 w-4 flex items-center justify-center">0</span>
+                    </a>
+                    <button class="bg-white text-blue-600 border border-blue-600 hover:bg-blue-50 px-4 py-2 rounded-md font-medium transition">
+                        登入
+                    </button>
+                    <button class="bg-blue-600 text-white hover:bg-blue-700 px-4 py-2 rounded-md font-medium transition">
+                        註冊
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-blue-600 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-2xl">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">學習不受限，<br>開啟你的知識新篇章</h1>
+                <p class="text-xl text-blue-100 mb-8">超過 1,000 門精選課程，由業界專家親自授課。現在就加入，投資最好的自己。</p>
+                <div class="flex space-x-4">
+                    <a href="#courses" class="bg-white text-blue-600 px-6 py-3 rounded-lg font-bold hover:bg-gray-100 transition">探索課程</a>
+                    <a href="#" class="bg-blue-500 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-400 transition">領取新人優惠</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Featured Courses -->
+    <main id="courses" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="flex justify-between items-center mb-8">
+            <h2 class="text-2xl font-bold text-gray-800">熱門課程</h2>
+            <a href="#" class="text-blue-600 hover:underline">查看全部</a>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Course Card 1 -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition group">
+                <div class="relative aspect-video bg-gray-200">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=600" alt="課程縮圖" class="w-full h-full object-cover">
+                    <div class="absolute top-2 right-2 bg-white/90 px-2 py-1 rounded text-xs font-bold text-blue-600">
+                        暢銷
+                    </div>
+                </div>
+                <div class="p-4">
+                    <h3 class="font-bold text-gray-900 mb-1 group-hover:text-blue-600 transition h-12 overflow-hidden">
+                        Python 網頁爬蟲入門：從零開始掌握數據採集
+                    </h3>
+                    <p class="text-sm text-gray-500 mb-3">王小明 老師</p>
+                    <div class="flex items-center mb-3">
+                        <div class="flex text-yellow-400 text-sm">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="text-xs text-gray-400 ml-2">(1,240)</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xl font-bold text-gray-900">NT$ 2,400</span>
+                        <span class="text-sm text-gray-400 line-through">NT$ 3,200</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course Card 2 -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition group">
+                <div class="relative aspect-video bg-gray-200">
+                    <img src="https://images.unsplash.com/photo-1586717791821-3f44a563cc4c?auto=format&fit=crop&q=80&w=600" alt="課程縮圖" class="w-full h-full object-cover">
+                </div>
+                <div class="p-4">
+                    <h3 class="font-bold text-gray-900 mb-1 group-hover:text-blue-600 transition h-12 overflow-hidden">
+                        UI/UX 設計思考：打造極致的使用者體驗
+                    </h3>
+                    <p class="text-sm text-gray-500 mb-3">陳大華 設計師</p>
+                    <div class="flex items-center mb-3">
+                        <div class="flex text-yellow-400 text-sm">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="text-xs text-gray-400 ml-2">(850)</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xl font-bold text-gray-900">NT$ 3,600</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course Card 3 -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition group">
+                <div class="relative aspect-video bg-gray-200">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=600" alt="課程縮圖" class="w-full h-full object-cover">
+                </div>
+                <div class="p-4">
+                    <h3 class="font-bold text-gray-900 mb-1 group-hover:text-blue-600 transition h-12 overflow-hidden">
+                        現代 JavaScript 全攻略：從 ES6 到非同步應用
+                    </h3>
+                    <p class="text-sm text-gray-500 mb-3">林開發 老師</p>
+                    <div class="flex items-center mb-3">
+                        <div class="flex text-yellow-400 text-sm">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <span class="text-xs text-gray-400 ml-2">(420)</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xl font-bold text-gray-900">NT$ 1,800</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course Card 4 -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition group">
+                <div class="relative aspect-video bg-gray-200">
+                    <img src="https://images.unsplash.com/photo-1557833006-c77c767ab969?auto=format&fit=crop&q=80&w=600" alt="課程縮圖" class="w-full h-full object-cover">
+                </div>
+                <div class="p-4">
+                    <h3 class="font-bold text-gray-900 mb-1 group-hover:text-blue-600 transition h-12 overflow-hidden">
+                        社群行銷實戰：從 0 到 1 建立品牌社群影響力
+                    </h3>
+                    <p class="text-sm text-gray-500 mb-3">張行銷 專家</p>
+                    <div class="flex items-center mb-3">
+                        <div class="flex text-yellow-400 text-sm">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="text-xs text-gray-400 ml-2">(2,100)</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xl font-bold text-gray-900">NT$ 2,200</span>
+                        <span class="text-sm text-gray-400 line-through">NT$ 4,500</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-gray-300 py-12 mt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div>
+                    <h4 class="text-white font-bold mb-4">關於 EduFlow</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white">品牌故事</a></li>
+                        <li><a href="#" class="hover:text-white">人才招募</a></li>
+                        <li><a href="#" class="hover:text-white">最新消息</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">教學服務</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white">成為老師</a></li>
+                        <li><a href="#" class="hover:text-white">機構合作</a></li>
+                        <li><a href="#" class="hover:text-white">課程規範</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">協助與導覽</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white">常見問題</a></li>
+                        <li><a href="#" class="hover:text-white">使用條款</a></li>
+                        <li><a href="#" class="hover:text-white">隱私權政策</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">關注我們</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-white text-xl"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="hover:text-white text-xl"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="hover:text-white text-xl"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center text-sm">
+                <p>&copy; 2023 EduFlow Online Learning. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
