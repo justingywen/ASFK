@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>課程詳情 | EduFlow</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Navigation (Same as index) -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between h-16 items-center">
+            <a href="index.html" class="text-2xl font-bold text-blue-600">EduFlow</a>
+            <div class="flex items-center space-x-6">
+                <a href="index.html" class="text-gray-600 hover:text-blue-600">返回首頁</a>
+                <button class="bg-blue-600 text-white px-4 py-2 rounded-md font-medium">立即購買</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- Left: Course Info -->
+            <div class="lg:col-span-2">
+                <nav class="flex mb-4 text-sm text-gray-500">
+                    <a href="index.html" class="hover:text-blue-600">首頁</a>
+                    <span class="mx-2">/</span>
+                    <a href="#" class="hover:text-blue-600">程式語言</a>
+                </nav>
+                <h1 class="text-3xl font-bold text-gray-900 mb-4">Python 網頁爬蟲入門：從零開始掌握數據採集</h1>
+                <p class="text-lg text-gray-600 mb-6">這門課程將帶領你深入淺出地學習 Python 爬蟲技術，從基本的請求發送到處理複雜的動態網頁。</p>
+                
+                <div class="flex items-center space-x-6 mb-8 text-sm">
+                    <div class="flex items-center">
+                        <img src="https://ui-avatars.com/api/?name=王小明&background=random" class="w-10 h-10 rounded-full mr-3">
+                        <div>
+                            <p class="text-gray-900 font-bold">王小明</p>
+                            <p class="text-gray-500">資深軟體工程師</p>
+                        </div>
+                    </div>
+                    <div class="border-l border-gray-300 h-8"></div>
+                    <div>
+                        <p class="text-gray-500">課程評價</p>
+                        <p class="text-yellow-400"><i class="fas fa-star"></i> 4.8 (1,240 則評價)</p>
+                    </div>
+                    <div>
+                        <p class="text-gray-500">學生人數</p>
+                        <p class="text-gray-900 font-bold">5,432 人</p>
+                    </div>
+                </div>
+
+                <!-- Tabs -->
+                <div class="border-b border-gray-200 mb-6">
+                    <div class="flex space-x-8">
+                        <button class="border-b-2 border-blue-600 py-4 text-blue-600 font-bold">課程介紹</button>
+                        <button class="py-4 text-gray-500 hover:text-gray-700">章節規劃</button>
+                        <button class="py-4 text-gray-500 hover:text-gray-700">常見問題</button>
+                    </div>
+                </div>
+
+                <div class="prose max-w-none text-gray-700">
+                    <h2 class="text-xl font-bold mb-4">你將會學到</h2>
+                    <ul class="grid grid-cols-1 md:grid-cols-2 gap-2 mb-8">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Python 基礎與環境架設</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> BeautifulSoup 網頁解析技巧</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Selenium 自動化爬蟲實作</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> 處理 API 與 JSON 數據</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Right: Purchase Sidebar -->
+            <div class="lg:col-span-1">
+                <div class="bg-white rounded-xl shadow-lg p-6 sticky top-24">
+                    <div class="aspect-video bg-gray-200 rounded-lg mb-4 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=600" class="w-full h-full object-cover">
+                    </div>
+                    <div class="mb-6">
+                        <span class="text-3xl font-bold text-gray-900">NT$ 2,400</span>
+                        <span class="text-lg text-gray-400 line-through ml-2">NT$ 3,200</span>
+                    </div>
+                    <button class="w-full bg-blue-600 text-white py-3 rounded-lg font-bold text-lg mb-3 hover:bg-blue-700 transition">立即購買</button>
+                    <button class="w-full border border-blue-600 text-blue-600 py-3 rounded-lg font-bold text-lg mb-6 hover:bg-blue-50 transition">加入購物車</button>
+                    
+                    <div class="text-sm text-gray-600 space-y-3">
+                        <p><i class="fas fa-infinity mr-2"></i> 永久觀看權限</p>
+                        <p><i class="fas fa-mobile-alt mr-2"></i> 支援行動裝置觀看</p>
+                        <p><i class="fas fa-certificate mr-2"></i> 完成課程證明</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
